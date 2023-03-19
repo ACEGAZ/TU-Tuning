@@ -28,9 +28,6 @@ SECRET_KEY = 'django-insecure-1zvtb64wmp5pw-zv$g$97%1kk-1g#f1axfuzbd8jgonm*k)u!y
 development = os.environ.get('DEVELOPMENT', False)
 DEBUG = 'DEVELOPMENT' in os.environ
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
 ALLOWED_HOSTS = ['localhost']
 
 
@@ -43,11 +40,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'whitenoise.runserver_nostatic',
     'website',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
