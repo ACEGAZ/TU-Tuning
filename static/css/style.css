@@ -2,3 +2,7 @@ body {
     background-color: black;
     font-family: 'Vollkorn';
 }
+
+#full-name-row {
+    margin-top: 100px;
+}
