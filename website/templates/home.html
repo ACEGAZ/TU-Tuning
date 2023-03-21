@@ -4,14 +4,20 @@
 {% block content %}
 <div class="container">
     <div class="row">
-        <div class="col text-warning text-center mt-5">
-         <h2>Welcome to <em>TU Tuning</em></h2>
+        <div class="col text-warning text-center mt-3">
+         <h3>Welcome to <em>TU Tuning</em></h3>
 
-         <p>We offer a variety of services</p>
+         <p class="mt-4">We offer a variety of services across East Sussex.</p>
+         <p>All services are remote which means that we come to you!</p>
+         <p>Just call or email us, both of whuch can be found <a class="text-warning" href="{% url 'contact' %}"><em>here</em></a></p>
+         <p>and we'll arrange a time to come and service your car.</p>
+         <br>
+         <p>Thanks for using <em>TU Tuning!</em></p>
+         <p>We hope to hear from you soon.</p>
         </div>
 
-        <div class="col text-warning text-center mt-5">
-            <h2 class="ml-4">What we offer:</h2>
+        <div class="col text-warning text-center mt-3">
+            <h3 class="ml-4">What we offer:</h3>
             <ul class="mt-4" id="services">
                 <li>
                     Stage 1 & 2 remaps

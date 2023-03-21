@@ -4,7 +4,7 @@ body {
 }
 
 #contact-wrapper {
-margin-top: 80px;
+margin-top: 50px;
 }
 
 .contact-submit:hover {
@@ -21,6 +21,6 @@ ul {
   }
 
 #services li {
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
