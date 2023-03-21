@@ -4,6 +4,15 @@
 {% block content %}
 <form method="POST">
    <div class="container" id="contact-wrapper">
+
+      <div class="row justify-content-center text-warning">
+         <h2 class="mr-3">Please fill in the below form</h2>
+      </div>
+
+      <div class="row justify-content-center text-warning mb-5">
+         <h2 class="mr-3">for an inquiry</h2>
+      </div>
+
       <div class="row justify-content-center text-warning">
          <h3 class="mr-3">Full Name</h3>
          {% csrf_token %}
@@ -28,7 +37,7 @@
          <p>{{ form.email }}</p>
       </div>
 
-      <div class="row justify-content-center mt-5">
+      <div class="row justify-content-center mt-3">
          <div class="col contact-submit-col">
             <button type="submit"
                class="text-warning btn btn-black btn-lg contact-submit mt-1">Send</button>
