@@ -27,9 +27,11 @@ SECRET_KEY = 'django-insecure-1zvtb64wmp5pw-zv$g$97%1kk-1g#f1axfuzbd8jgonm*k)u!y
 
 development = os.environ.get('DEVELOPMENT', False)
 DEBUG = 'DEVELOPMENT' in os.environ
+# DEBUG = True
 
 
 ALLOWED_HOSTS = ['localhost']
+CSRF_TRUSTED_ORIGINS = ["https://8000-acegaz-tutuning-xn4rsj1e4uv.ws-eu90.gitpod.io"]
 
 
 # Application definition
@@ -143,14 +145,12 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Email config
-if 'DEVELOPMENT' in os.environ:
-    EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-    DEFAULT_FROM_EMAIL = 'tutuningperformance@gmail.com'
-else:
-    EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-    EMAIL_USE_TLS = True
-    EMAIL_PORT = 587
-    EMAIL_HOST = 'smtp.gmail.com'
-    EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
-    EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASS')
-    DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_USE_TLS = True
+EMAIL_USE_SSL = False
+EMAIL_PORT = 587
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'tutuningperformance@gmail.com'
+EMAIL_HOST_PASSWORD = 'dslihjbxjraqujvs'
+
+# DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')

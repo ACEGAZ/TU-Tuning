@@ -1,8 +1,8 @@
 from django import forms
-from .models import Contact
 
 
-class ContactForm(forms.ModelForm):
-    class Meta:
-        model = Contact
-        fields = '__all__'
+class ContactForm(forms.Form):
+    full_name = forms.CharField(max_length=50)
+    phone_number = forms.CharField(max_length=20)
+    Registration = forms.CharField(max_length=20)
+    email = forms.EmailField(max_length=50)
