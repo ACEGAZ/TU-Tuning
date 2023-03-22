@@ -31,7 +31,7 @@ DEBUG = 'DEVELOPMENT' in os.environ
 
 
 ALLOWED_HOSTS = ['localhost']
-CSRF_TRUSTED_ORIGINS = ["https://8000-acegaz-tutuning-xn4rsj1e4uv.ws-eu90.gitpod.io"]
+CSRF_TRUSTED_ORIGINS = ["https://8000-acegaz-tutuning-xn4rsj1e4uv.ws-eu90.gitpod.io", 'tu-tuning.herokuapp.com']
 
 
 # Application definition
