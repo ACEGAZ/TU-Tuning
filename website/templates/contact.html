@@ -3,35 +3,39 @@
 
 {% block content %}
 <form method="POST">
-   <div class="container" id="contact-wrapper">
+   <div class="container-fluid text-warning" id="contact-wrapper">
 
-      <div class="row justify-content-center text-warning">
-         <h3>Please fill in the below form or call 07341 825573</h3>
+      <div class="row justify-content-center">
+         <h3>Please fill in the below form</h3>
       </div>
 
-      <div class="row justify-content-center text-warning mb-5">
+      <div class="row justify-content-center">
+         <h3>or call 07341 825573</h3>
+      </div>
+
+      <div class="row justify-content-center mb-3">
          <h3 class="mr-3">for an inquiry</h3>
       </div>
 
-      <div class="row justify-content-center text-warning">
+      <div class="row justify-content-center">
          <h3 class="mr-3">Full Name</h3>
          {% csrf_token %}
          <p>{{ form.full_name }}</p>
       </div>
 
-      <div class="row justify-content-center text-warning mt-3">
+      <div class="row justify-content-center mt-3">
          <h3 class="mr-4 ml-3">Number</h3>
          {% csrf_token %}
          <p>{{ form.phone_number }}</p>
       </div>
 
-      <div class="row justify-content-center text-warning mt-3">
+      <div class="row justify-content-center mt-3">
          <h3 class="mr-5 ml-5 pr-1">Reg</h3>
          {% csrf_token %}
          <p>{{ form.Registration }}</p>
       </div>
 
-      <div class="row justify-content-center text-warning mt-3">
+      <div class="row justify-content-center mt-3">
          <h3 class="mr-4 ml-4 pr-4">Email</h3>
          {% csrf_token %}
          <p>{{ form.email }}</p>
