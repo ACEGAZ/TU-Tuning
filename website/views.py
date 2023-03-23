@@ -38,7 +38,7 @@ def send_contact_email(request):
             message = "\n".join(body.values())
 
         try:
-            send_mail(subject, message, 'tutuningperformance@gmail.com',
+            send_mail(subject, message, settings.DEFAULT_FROM_EMAIL,
                       ['tutuningperformance@gmail.com'],)
         except BadHeaderError:
             return HttpResponse('Invalid header found.')
