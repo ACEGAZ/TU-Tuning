@@ -22,6 +22,7 @@ def contact_success(request):
 
 
 def send_contact_email(request):
+    """ a view to return the contact page and send contact emails via gmail"""
     if request.method == 'POST':
         form = ContactForm(request.POST)
         if form.is_valid():
