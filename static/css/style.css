@@ -3,6 +3,7 @@ body {
     font-family: 'Vollkorn';
 }
 
+/* contact page */
 #contact-wrapper {
 margin-top: 50px;
 }
@@ -16,6 +17,7 @@ margin-top: 50px;
     text-align: right;
 }
 
+/* home page */
 ul {
     list-style: none;
   }
@@ -28,6 +30,7 @@ ul {
   font-size: 20px;
 }
 
+/* font size for all pages */
 .info {
   font-size: 20px;
 }
