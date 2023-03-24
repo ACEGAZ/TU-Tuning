@@ -30,7 +30,7 @@ DEBUG = 'DEVELOPMENT' in os.environ
 # DEBUG = True
 
 
-ALLOWED_HOSTS = ['localhost', '.herokuapp.com']
+ALLOWED_HOSTS = ['localhost', '.herokuapp.com', 'tutuning.co.uk']
 CSRF_TRUSTED_ORIGINS = ["https://8000-acegaz-tutuning-xn4rsj1e4uv.ws-eu92.gitpod.io"]
 
 
