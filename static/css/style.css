@@ -1,6 +1,22 @@
 body {
-    background-color: black;
+    background-color: rgb(249, 249, 249);
     font-family: 'Vollkorn';
+}
+
+/* logo */
+#logo {
+  width: 200px;
+  height: 80px;
+}
+
+/* nav */
+#nav {
+    background-color: black;
+}
+
+/* footer */
+#footer {
+  background-color: black;
 }
 
 /* contact page */
