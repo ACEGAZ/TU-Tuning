@@ -38,11 +38,8 @@ ul {
     list-style: none;
   }
 
-#services li {
-  margin-top: 5px;
-}
-
-#services {
+li {
+  margin-top: 10px;
   font-size: 20px;
 }
 
