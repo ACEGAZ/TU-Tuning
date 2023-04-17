@@ -158,13 +158,123 @@ The Tu Tuning website was deployed on Heroku using the following steps:
 12. Then I successfully deployed my app using the deploy branch button.
 
 ## Tests <a name="tests"></a>
+- Functional testing 
+  <br>
+  <br>
+  link tests
+  <br>
+  <br>
+
+  Description: 
+
+  Check all links work.
+
+  Steps:
+
+  1. Navigate to [Tu-Tuning](https://tu-tuning.herokuapp.com/) and click on all links.
+  2. Be taken to the appropriate page.
+  <br>
+  <br>
+  Expected:
+  <br>
+  <br>
+  The user is taken to the correct page
+  <br>
+  <br>
+  Actual: 
+  <br>
+  <br>
+  The user is taken to the correct page
+  <br>
+  <br>
+  <br>
+
+  Contact form test
+  <br>
+  <br>
+  
+  Description: 
+
+  Check the contact form is sent correctly.
+
+  Steps:
+
+  1. Navigate to [Tu-Tuning](https://tu-tuning.herokuapp.com/) and click on contact link.
+  2. Complete the contact form.
+  3. Click send
+  <br>
+  <br>
+  Expected:
+  <br>
+  <br>
+  The user is given the inquiry sent message and the information is sent.
+  <br>
+  <br>
+  Actual: 
+  <br>
+  <br>
+  The user is given the inquiry sent message and the information is sent.
+  <br>
+  <br>
+
+  Description: 
+
+  Check the contact form is received correctly.
+
+  Steps:
+
+  1. Navigate to [Tu-Tuning](https://tu-tuning.herokuapp.com/) and click on contact link.
+  2. Complete the contact form.
+  3. Click send
+  4. Check that the email was received on the email account that is set up. 
+  <br>
+  <br>
+  Expected:
+  <br>
+  <br>
+  The users information is received
+  <br>
+  <br>
+  Actual: 
+  <br>
+  <br>
+  The users information is received
+  <br>
+  <br>
+  <hr>
 
 ## Validators <a name="Validators"></a>
 
+I used W3C and lighthouse to validate my code and gitpods in-built python validator to check my pyhton code.
+<br>
+All results can be seen below.
+<br>
+<br>
+<img src = 'static/images/html_validator.png'>
+<br>
+<br>
+<img src = 'static/images/css_validator.png'>
+<br>
+<br>
+<img src = 'static/images/lighthouse.png'>
+<hr>
+
 ## Bugs & Solutions <a name="bugs-&-solutions"></a>
+<br>
+<br>
+There were no major bugs to speak when creating this website.
+<hr> 
 
 ## Updates <a name="updates"></a>
+<br>
+<br>
+In the future I would like to add the fuctionality for users to see the power increase in their car when getting a remap using a app built into the website.
+<hr>
 
 ## Credits <a name="credits"></a>
+<br>
+<br>
+All images used are the property of Terry Uttridge.
+<hr>
 
 
